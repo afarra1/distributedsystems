@@ -1,0 +1,62 @@
+#HomeWrapper{
+    width: 100%;
+    display: flex;
+    height: 90svh;
+}
+
+#HomeWrapper #HomeLeft {
+    width: 42.5%;
+    display: flex;
+    flex-direction: column;
+    padding: 3.75%;
+    justify-content: center;
+}
+#HomeWrapper #HomeRight {
+    width: 42.5%;
+    padding: 3.75%;
+    display: flex;
+    align-items: flex-end;
+}
+#HomeLeft h1{
+    padding: 0;
+    margin: 0;
+    font-style: italic;
+    -webkit-text-stroke-width: 2px;
+    letter-spacing: 2px;
+}
+#HomeLeft #h1Wrapper{
+    border-bottom: solid 2px;
+    width: 65%;
+    padding: 1%;
+    padding-left: 0;
+}
+#HomeLeft h3{
+    font-weight: 500;
+}
+
+#HomeRight img{
+    width: 80%;
+    height: 80%;
+    margin-top: -10%;
+}
+
+#ImageWrapper{
+    background-color: var(--Bisque);
+    border-top-left-radius: 33%;
+    border-top-right-radius: 33%;
+    margin-bottom: -7.5%;
+}
+
+#HomeServiceWrapper{
+    display: flex;
+    gap: 5%;
+    justify-content: center;
+}
+
+#SingleService{
+    border-style: solid;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 20px;
+}

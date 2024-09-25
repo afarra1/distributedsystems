@@ -1,0 +1,36 @@
+.navbar {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    border-bottom-style: solid;
+    border-bottom-width: .5px;
+}
+
+.navbar #LeftNav{
+    width: 10%;
+    display: flex;
+    justify-content: center;
+}
+
+#LeftNav img{ 
+    width: 5svw;
+}
+.navbar #RightNav{
+    width: 90%;
+    display: flex;
+    gap: 5%;
+    text-decoration: none;
+    justify-content: center;
+    align-items: center;
+}
+
+#RightNav a{
+    text-decoration: none;
+    color: black;
+    font-size: 16px;
+}
+
+#RightNav a:hover{
+    scale: 1.1;
+    transition: .6s;
+}
