@@ -1,0 +1,45 @@
+#Login { 
+    height: 100svh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#LoginWrapper {
+    height: 75svh;
+    width: 75svw;
+    display: flex;
+    box-shadow: var(--boxShadow);
+    border-radius: 20px;
+}
+
+#LoginLeft {
+    width: 30%;
+    border-bottom-left-radius: 20px;
+    border-top-left-radius: 20px;
+    background-color: var(--main);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#LoginRight {
+    width: 70%;
+    background-color: white;
+    padding: 2.5%;
+}
+
+#LoginLeft img { 
+    width: 150%;
+    align-self: center;
+}
+
+#LoginLeft h3 {
+    padding: 7.5%;
+    color: white;
+    font-weight: 900;
+}
+
+#LoginLeft span {
+    font-weight: 300;
+}

@@ -19,8 +19,8 @@ export default function Navbar() {
                 <Link to="/about">Contact us</Link>
             </div>
             <div id='signInNav'>
-                <Link id='sign1' to="/">Sign in</Link>
-                <Link id='sign2' to="/">Sign up</Link>
+                <Link id='sign1' to="/login">Sign in</Link>
+                <Link id='sign2' to="/register">Sign up</Link>
             </div>
 
         </nav>
