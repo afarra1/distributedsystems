@@ -1,3 +1,9 @@
+#Home h4{
+    font-weight: 300;
+    font-size: 16px;
+    color: #A7A7A7;
+}
+
 #HomeWrapper{
     width: 100%;
     display: flex;
@@ -5,58 +11,266 @@
 }
 
 #HomeWrapper #HomeLeft {
-    width: 42.5%;
+    width: 60%;
     display: flex;
     flex-direction: column;
-    padding: 3.75%;
-    justify-content: center;
-}
-#HomeWrapper #HomeRight {
-    width: 42.5%;
-    padding: 3.75%;
-    display: flex;
-    align-items: flex-end;
-}
-#HomeLeft h1{
-    padding: 0;
-    margin: 0;
-    font-style: italic;
-    -webkit-text-stroke-width: 2px;
-    letter-spacing: 2px;
-}
-#HomeLeft #h1Wrapper{
-    border-bottom: solid 2px;
-    width: 65%;
-    padding: 1%;
-    padding-left: 0;
-}
-#HomeLeft h3{
-    font-weight: 500;
+    padding: 5%;
+    padding-top: 12.5%;
+    justify-content: space-around;
 }
 
-#HomeRight img{
-    width: 80%;
-    height: 80%;
-    margin-top: -10%;
+#HomeLeft h1{
+    color: var(--main);
+    line-height: 52px;
+    margin-bottom: 5%;
+}
+#HomeLeft span{
+    color: black;
 }
 
 #ImageWrapper{
-    background-color: var(--Bisque);
-    border-top-left-radius: 33%;
-    border-top-right-radius: 33%;
-    margin-bottom: -7.5%;
+    background-color: green;
+    width: 70%;
 }
 
-#HomeServiceWrapper{
+#HomeWrapper #HomeRight {
+    width: 40%;
+    padding: 5%;
     display: flex;
-    gap: 5%;
+    align-items: center;
+    justify-content: flex-end;
+    overflow: hidden;
+}
+
+
+#HomeWrapper #HomeRight #circleHome{
+    height: 30svw;
+    width: 30svw;
+    border-radius: 50%;
+    background-color: var(--second);
+    align-self: center;
+    display: flex;
+    align-items: center;
     justify-content: center;
 }
 
-#SingleService{
-    border-style: solid;
+#HomeWrapper #HomeRight #circleHomeWhite{
+    height: 27.5svw;
+    width: 27.5svw;
+    border-radius: 50%;
+    background-color: white;
+    align-self: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+#HomeWrapper #HomeRight #circleHome2{
+    height: 25svw;
+    width: 25svw;
+    border-radius: 50%;
+    background-color: var(--main);
+    align-self: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#HomeWrapper #HomeRight img {
+    height: 40svw;
+    margin-bottom: 10svw;
+    position: relative;
+    
+}
+
+/* Single Service Area and Single Service Component CSS */
+.HomeServiceWrapper{
+    display: flex;
+    flex-direction: column;
+    gap: 5%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 5%;
+}
+#HomeServiceWrap{
+    width: 75%;
+}
+
+.servicehomewrapper{
+    margin-top: 2.5%;
+    display: flex;
+    gap: 5%;
+    width: 100%;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+#SingleService {
+    border-radius: 20px;
+    height: 17.5svw;
+    width: 17.5svw;
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    background-color: transparent;
+    transition: background-color 0.3s ease;
+    -webkit-user-select: none;
+    user-select: none;
+    cursor: pointer;
+}
+
+#SingleService img {
+    margin-bottom: 12.5%;
+    height: 6.25svw;
+    transition: filter 0.3s ease;
+}
+
+#SingleService h4 {
+    color: black;
+    transition: color 0.3s ease;
+}
+
+#SingleService:hover {
+    background-color: var(--main);
+}
+
+#SingleService:hover img {
+    filter: brightness(0) invert(1);
+}
+
+#SingleService:hover h4 {
+    color: white;
+}
+
+/* Meet Doctor Area and Meet Doctor Component CSS */
+
+#meetdoctor{
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    height: 50svh;
+    width: 22.5svw;
     border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 2.5%;
+}
+
+#meetdoctor img {
+    height: 22.5svh;
+}
+
+#meetdoctor h3{
+    font-size: 24px;
+}
+
+#meetdoctor #meetdocimgwrap {
+    background-color: var(--main);
+    height: 20svh;
+    width: 80%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    border-radius: 20px;
+}
+
+/* Search Doctor CSS */
+
+#floatingsearch { 
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    padding: 2.25%;
+    width: 125%;
+    position: relative;
+    border-radius: 10px;
+    margin-top: 12.5%;
+}
+
+#floatingsearch h4 {
+    color: black;
+    font-weight: 700;
+}
+
+#floatingInputs {
+    display: flex;
+    gap: 2.5%;
+    margin-top: 1.25%;
+    align-items: center;
+}
+
+#floatingInputs #textInput{
+    border-radius: 10px;
+    background-color: var(--second);
+    font-size: 16px;
+    border-style: none;
+    text-align: center;
+    height: 5svh;
+    width: 30%;
+}
+
+#floatingInputs button {
+    border-style: none;
+    background-color: var(--main);
+    color: white;
+    font-size: 16px;
+    width: 12.5%;
+    border-radius: 10px;
+    cursor: pointer;
+    height: 5svh;
+}
+
+#floatingInputs button:hover{
+    background-color: white;
+    color: var(--main);
+    transition: .6s;
+}
+
+/* Toggle Switch */
+.toggleSwitch {
+    position: relative;
+    display: inline-block;
+    width: 50px;
+    height: 25px;
+    margin: 0;
+}
+
+.toggleSwitch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    transition: 0.4s;
+    border-radius: 25px;
+}
+
+.slider:before {
+    position: absolute;
+    content: '';
+    height: 20px;
+    width: 20px;
+    left: 4px;
+    bottom: 2.5px;
+    background-color: white;
+    transition: 0.4s;
+    border-radius: 50%;
+}
+
+input:checked + .slider {
+    background-color: var(--main);
+}
+
+input:checked + .slider:before {
+    transform: translateX(24px);
 }

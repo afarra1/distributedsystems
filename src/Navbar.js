@@ -7,16 +7,22 @@ export default function Navbar() {
     return (
         <nav className="navbar">
             <div id='LeftNav'>
-                <Link>
-                <img src={Logo}/>
+                <Link id='HosiptalLogo'>
+                    Hosiptal <span className='color'>logo</span>
                 </Link>
             </div>
             <div id='RightNav'>
                 <Link to="/">Home</Link>
+                <Link to="/">Services</Link>
+                <Link to="/">Doctors</Link>
                 <Link to="/about">About</Link>
-                <Link to="/">Reserve a Session</Link>
-                <Link to="/">Contact Us</Link>
+                <Link to="/about">Contact us</Link>
             </div>
+            <div id='signInNav'>
+                <Link id='sign1' to="/">Sign in</Link>
+                <Link id='sign2' to="/">Sign up</Link>
+            </div>
+
         </nav>
     )
 }

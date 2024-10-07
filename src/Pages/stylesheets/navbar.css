@@ -1,22 +1,32 @@
 .navbar {
     width: 100%;
     display: flex;
-    justify-content: space-between;
-    border-bottom-style: solid;
-    border-bottom-width: .5px;
+    justify-content: center;
+    padding: 1%;
+    align-items: center;
+    padding-left: 2.5%;
+    padding-right: 2.5%;
+}
+
+.navbar a{
+    color: black;
+    font-weight: 400;
 }
 
 .navbar #LeftNav{
-    width: 10%;
+    width: 15%;
     display: flex;
     justify-content: center;
 }
-
+.color {
+    color: black;
+    font-weight: 500;
+}
 #LeftNav img{ 
     width: 5svw;
 }
 .navbar #RightNav{
-    width: 90%;
+    width: 65%;
     display: flex;
     gap: 5%;
     text-decoration: none;
@@ -33,4 +43,33 @@
 #RightNav a:hover{
     scale: 1.1;
     transition: .6s;
+}
+
+#HosiptalLogo {
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 20px;
+    color: var(--main);
+}
+
+#signInNav{
+    display: flex;
+    width: 20%;
+    gap: 2.5%;
+}
+
+#signInNav a{
+    text-decoration: none;
+    color: black;
+    border: solid 1px var(--main);
+    padding: 1.25%;
+    width: 7.5svw;
+    display: flex;
+    justify-content: center;
+    border-radius: 10px;
+}
+
+#signInNav #sign1 {
+    background-color: var(--main);
+    color: white;
 }

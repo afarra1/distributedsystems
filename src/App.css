@@ -1,22 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+/* Apply the font globally */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
 :root {
-  --primary-color: #3498db; /* Example of creating a color code */
-  --secondary-color: #2ecc71; 
-  --Red: #fe5e54; 
-  --Bisque: #ffe1c5; 
+  --main: #4200FF;
+  /* Example of creating a color code */
+  --second: #E7E7E7;
 }
 
 h1 {
   font-size: 3rem;
+  padding: 0;
+  margin: 0;
 }
 
 h2 {
   font-size: 2rem;
+  padding: 0;
+  margin: 0;
 }
 
 h3 {
-  font-size: 1.75rem;
+  font-size: 1.5rem;
+  padding: 0;
+  margin: 0;
 }
 
 h4 {
-  font-size: 1.5rem;
+  font-size: 1.33rem;
+  padding: 0;
+  margin: 0;
+}
+
+.normal {
+  font-weight: 500 !important;
 }
