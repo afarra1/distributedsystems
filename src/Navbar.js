@@ -7,7 +7,7 @@ export default function Navbar() {
     return (
         <nav className="navbar">
             <div id='LeftNav'>
-                <Link id='HosiptalLogo'>
+                <Link to="/" id='HosiptalLogo'>
                     Hosiptal <span className='color'>logo</span>
                 </Link>
             </div>
@@ -16,7 +16,7 @@ export default function Navbar() {
                 <Link to="/">Services</Link>
                 <Link to="/">Doctors</Link>
                 <Link to="/about">About</Link>
-                <Link to="/about">Contact us</Link>
+                <Link to="/">Contact us</Link>
             </div>
             <div id='signInNav'>
                 <Link id='sign1' to="/login">Sign in</Link>
