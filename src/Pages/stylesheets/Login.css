@@ -27,6 +27,9 @@
     width: 70%;
     background-color: white;
     padding: 2.5%;
+    display: flex;
+    flex-direction: column;
+    
 }
 
 #LoginLeft img { 
@@ -42,4 +45,47 @@
 
 #LoginLeft span {
     font-weight: 300;
+}
+
+#formLogin {
+    display: flex;
+    flex-direction: column;
+    margin-top: 12.5%;
+    align-self: center;
+}
+
+#LoginRight #Signintext {
+    font-size: 16px;
+    font-weight: 300;
+}
+
+#formLogin input {
+    width: 30svw;
+    font-size: 16px;
+    padding: 2.5%;
+    border-width: .5px;
+    border-radius: 10px;
+    margin-bottom: 2.5%;
+    margin-top: 1.25%;
+    height: 5.33svh;
+}
+
+#LoginButton {
+    width: 50%;
+    align-self: center;
+    margin: 2.5%;
+    border-radius: 10px;
+    border-style: none;
+    padding: 1.25%;
+    font-size: 16px;
+    background-color: var(--main);
+    color: white;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+#LoginButton:hover {
+    background-color: white;
+    color: var(--main);
+    transition: .6s;
 }

@@ -44,3 +44,34 @@ h4 {
 .normal {
   font-weight: 500 !important;
 }
+
+
+/* For WebKit browsers (Chrome, Safari) */
+::-webkit-scrollbar {
+  width: 16px;
+  /* Width of the scrollbar */
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+  /* Transparent background */
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: black;
+  /* Black thumb */
+  border-radius: 6px;
+  /* Rounded corners (optional) */
+  border: 3px solid transparent;
+  /* Space around the thumb */
+  background-clip: padding-box;
+  /* Ensures the border doesn't overlay the thumb */
+}
+
+/* For Firefox */
+* {
+  scrollbar-width: thin;
+  /* Thin scrollbar */
+  scrollbar-color: black transparent;
+  /* Black thumb on transparent track */
+}
