@@ -15,7 +15,7 @@
     display: flex;
     flex-direction: column;
     padding: 5%;
-    padding-top: 12.5%;
+    padding-top: 10%;
     justify-content: space-around;
 }
 
@@ -24,8 +24,45 @@
     line-height: 52px;
     margin-bottom: 5%;
 }
+
 #HomeLeft span{
     color: black;
+}
+
+.bookWrapper{
+    margin-top: 2.5%;
+    display: flex;
+    align-items: center;
+}
+
+.BookanAppoint{
+    background-color: var(--main);
+    font-size: 16px;
+    color: white;
+    padding: 1.75% 5%;
+    border-radius: 10px;
+    font-weight: 500;
+}
+
+.PlayWrapper {
+    padding: 5px;
+    border: solid 1px var(--lightgrey);
+    border-radius: 50%;
+    margin-left: auto;
+    margin-right: 1.25%;
+}
+
+.PlayButton{
+    background-color: var(--main);
+    font-size: 16px;
+    height: 50px;
+    width: 50px;
+    color: white;
+    border-radius: 50%;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 #ImageWrapper{
@@ -78,10 +115,14 @@
 }
 
 #HomeWrapper #HomeRight img {
+    z-index: 10;
     height: 40svw;
     margin-bottom: 10svw;
     position: relative;
+    mask-image: linear-gradient(to top, transparent 0%, transparent 13.33%, black 66.67%);
+    -webkit-mask-image: linear-gradient(to top, transparent 0%, transparent 13.33%, black 66.67%); /* For webkit browsers */
 }
+
 
 /* Single Service Area and Single Service Component CSS */
 .HomeServiceWrapper{
@@ -123,9 +164,10 @@
     cursor: pointer;
 }
 
-#SingleService img {
+#SingleService .homeicon {
     margin-bottom: 12.5%;
-    height: 6.25svw;
+    font-size: 5svw;
+    color: var(--main);
     transition: filter 0.3s ease;
 }
 
@@ -138,7 +180,7 @@
     background-color: var(--main);
 }
 
-#SingleService:hover img {
+#SingleService:hover .homeicon {
     filter: brightness(0) invert(1);
 }
 
@@ -274,3 +316,51 @@ input:checked + .slider {
 input:checked + .slider:before {
     transform: translateX(24px);
 }
+
+.floatingtext {
+    width: 20svw;
+    padding: 1%;
+    border-radius: 20px;
+    background-color: white;
+    position: absolute;
+    right: 22.33%;
+    top: 25%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+
+.floatingIcon {
+    height: 40px;
+    font-size: 28px;
+    color: var(--main);
+}
+
+.floatingtextwrapper {
+    display: flex;
+    flex-direction: column;
+    margin-left: 5%;
+}
+
+.floatingtextwrapper h3 {
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.floatingtextwrapper #subtext {
+    font-size: 12px ;
+    color: #A7A7A7;
+    font-weight: 500;
+}
+
+#justifyingfloat{
+    justify-content: space-between;
+}
+
+#rightIconStyle {
+    transform: rotate(90deg);
+    color: #A7A7A7;
+}
+
