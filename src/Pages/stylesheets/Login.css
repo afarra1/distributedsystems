@@ -1,4 +1,4 @@
-#Login { 
+#Login {
     height: 100svh;
     display: flex;
     align-items: center;
@@ -29,10 +29,10 @@
     padding: 2.5%;
     display: flex;
     flex-direction: column;
-    
+
 }
 
-#LoginLeft img { 
+#LoginLeft img {
     width: 150%;
     align-self: center;
 }
@@ -47,11 +47,10 @@
     font-weight: 300;
 }
 
-#formLogin {
+.formLogin {
     display: flex;
     flex-direction: column;
-    margin-top: 12.5%;
-    align-self: center;
+    width: 100%;
 }
 
 #LoginRight #Signintext {
@@ -59,7 +58,7 @@
     font-weight: 300;
 }
 
-#formLogin input {
+.formLogin input {
     width: 30svw;
     font-size: 16px;
     padding: 2.5%;
@@ -73,7 +72,7 @@
 #LoginButton {
     width: 50%;
     align-self: center;
-    margin: 2.5%;
+    margin: 2.5% 0;
     border-radius: 10px;
     border-style: none;
     padding: 1.25%;
@@ -85,7 +84,52 @@
 }
 
 #LoginButton:hover {
-    background-color: white;
+    background-color: var(--second);
     color: var(--main);
     transition: .6s;
+}
+
+#LoginRight .rowinput {
+    display: flex;
+    gap: 1%;
+    margin-top: 1.25%;
+}
+
+#LoginRight .loginrightinputs label {
+    display: flex;
+    flex-direction: column;
+    margin-top: 1.25%;
+    font-size: 16px;
+}
+
+#LoginRight .loginrightinputs input {
+    width: 50%;
+    height: 30px;
+    margin-top: .5%;
+    font-size: 14px;
+    padding: 1%;
+    border-radius: 5px;
+    border: solid .5px black;
+}
+
+#LoginRight .submitright {
+    width: 33%;
+    height: 32px;
+    align-self: center;
+    margin-top: 2.5%;
+    font-size: 16px;
+    font-weight: 300;
+    border-style: none;
+    border-radius: 10px;
+    background-color: var(--main);
+    color: white;
+    cursor: pointer;
+}
+
+#LoginRight .logincenter {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    margin-top: auto;
+    margin-bottom: auto;
 }

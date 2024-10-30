@@ -11,8 +11,9 @@ export default function Login() {
                 <img src= {Doctor1}/>
             </div>
             <div id='LoginRight'>
-                <h4>Sign In</h4>
-                <form id='formLogin'>
+              <div className='logincenter'>
+                <h4 style={{textAlign:'center'}}>Sign In</h4>
+                <form className='formLogin'>
                   <h4 id='Signintext'>Email</h4>
                   <input type='email' placeholder='Enter Email'/>
                   <h4 id='Signintext'>Password</h4>
@@ -20,6 +21,8 @@ export default function Login() {
                   <button id='LoginButton'>Login</button>
                 </form>
             </div>
+
+              </div>
         </div>
     </div>
   )

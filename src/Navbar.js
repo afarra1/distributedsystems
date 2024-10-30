@@ -7,7 +7,7 @@ export default function Navbar() {
     return (
         <nav className="navbar">
             <div id='LeftNav'>
-                <Link to="/" id='HosiptalLogo'>
+                <Link to="/" className='HosiptalLogo'>
                     Hosiptal <span className='color'>logo</span>
                 </Link>
             </div>

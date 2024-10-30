@@ -12,6 +12,30 @@ export default function Register() {
             </div>
             <div id='LoginRight'>
                 <h4>Sign up For account</h4>
+                <label className='rowinput'>
+                <input type='checkbox'/>
+                  Doctor
+                </label>
+                <form className='formLogin'>
+                <div className='loginrightinputs'>
+                <label>
+                  Name
+                <input type='text' className='inputfield'/>
+                </label>
+                
+                <label>
+                  Email
+                <input type='text' className='inputfield'/>
+                </label>
+ 
+                <label>
+                  Password
+                <input type='password' className='inputfield'/>
+                </label>
+
+                </div>
+            <button className='submitright'>Sign Up</button>
+                </form>
             </div>
         </div>
     </div>

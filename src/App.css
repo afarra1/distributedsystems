@@ -76,3 +76,8 @@ h4 {
   scrollbar-color: black transparent;
   /* Black thumb on transparent track */
 }
+
+.container{ 
+  display: flex;
+  width: 100%;
+}

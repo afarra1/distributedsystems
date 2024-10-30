@@ -106,7 +106,7 @@ export default function Home() {
                         </div>
                         <FloatingText Icon={FaSearch} maintext={"Well Qualified doctors"} subtext={"Treat with care"} />
                         <FloatingText top={"50%"} Icon={FaRegCalendarCheck} maintext={"Book an appointment"} subtext={"Online appointment"} />
-                        <FloatingText isRight = {true} right={0} width={'12.5svw'} top={"50%"} SecondIcon={FaPhone} maintext={"Contact no."} subtext={"+20100000050"} />
+                        <FloatingText isRight = {true} right={5} width={'12.5svw'} top={"50%"} SecondIcon={FaPhone} maintext={"Contact no."} subtext={"+20100000050"} />
 
                     </div>
                 </div>
