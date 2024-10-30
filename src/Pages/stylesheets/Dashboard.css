@@ -1,4 +1,24 @@
 .DashboardWrapper {
-    height: 100svh;
+    min-height: 100svh;
     width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 2.5%;
 }
+
+.dashboardboxcomponent {
+    box-shadow: var(--boxShadow);
+    background-color: white;
+    border-radius: 10px;
+    padding: 1%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.DashboardRow {
+    display: flex;
+    gap: 2.5%;
+    margin-top: 2.5%;
+}
+

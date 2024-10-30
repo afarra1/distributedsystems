@@ -1,8 +1,8 @@
 .DashNav {
     height: 100svh;
-    border-right: solid 1px black;
     width: 20svw;
     background-color: white;
+    box-shadow: var(--boxShadow);
 }
 
 #HosiptalLogo{
