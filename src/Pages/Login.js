@@ -7,7 +7,7 @@ import { useNavigate } from 'react-router-dom';
 const AuthPage = () => {
 }
 
-export default function Login({session}) {
+export default function Login() {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [error, setError] = useState(null);
@@ -29,6 +29,7 @@ export default function Login({session}) {
       setError(error.message);
     } else {
       setUserId(data.user.id); // Set user ID on successful login
+      localStorage.setItem('supabaseToken', data.session.access_token); // Store token
       console.log('Login successful', data);
       navigate('/'); // Redirect to home page on successful login
 
@@ -47,13 +48,12 @@ export default function Login({session}) {
             <h4 style={{ textAlign: 'center' }}>Sign In</h4>
             <form className='formLogin' onSubmit={handleLogin}>
               <h4 id='Signintext'>Email</h4>
-              <input type='email' placeholder='Enter Email' onChange={(e) => setEmail(e.target.value)} required/>
+              <input type='email' placeholder='Enter Email' onChange={(e) => setEmail(e.target.value)} required />
               <h4 id='Signintext'>Password</h4>
-              <input type='password' placeholder='Enter Password' onChange={(e) => setPassword(e.target.value)} required/>
+              <input type='password' placeholder='Enter Password' onChange={(e) => setPassword(e.target.value)} required />
               <button id='LoginButton'>Login</button>
             </form>
             {error && <p>{error}</p>}
-            {userId && <p style={{ color: 'green' }}>User ID: {userId}</p>} {/* Display user ID */}
 
           </div>
 

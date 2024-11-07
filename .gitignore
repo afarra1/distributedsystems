@@ -23,3 +23,5 @@ yarn-debug.log*
 yarn-error.log*
 src/Config.env
 src/SupabaseClient.js
+backend/src/main/resources/application.properties
+backend/src/main/resources/application.properties

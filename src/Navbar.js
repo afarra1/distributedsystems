@@ -29,6 +29,12 @@ export default function Navbar({}) {
                 <Link to="/">Doctors</Link>
                 <Link to="/about">About</Link>
                 <Link to="/">Contact us</Link>
+                {session ? ( // Conditional rendering based on session
+                    <Link id='sign1' to="/profile">Profile</Link>
+                ) : (
+                    <>
+                    </>
+                )}
             </div>
             <div id='signInNav'>
                 {session ? ( // Conditional rendering based on session
